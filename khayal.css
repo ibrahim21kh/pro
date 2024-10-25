@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #3572EF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+.navigation{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.icon{
+   margin-top: 5px;
+}
+.logo{
+   margin-top: 5px;
+   margin-left: 11px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+#cart{
+    margin: 0 11px;
+}
+#ita{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: relative;
+    /* bottom:50px ; */
+}
+form{
+    display: flex;
+    justify-content: space-between;
+}
+#exit{
+    color: aliceblue;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size:40px;
+    
+}
+#button{
+    margin-top: 20px;
+    width: 110px;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+#button:hover{
+    background-color: #3572EF;
+    color: white;
+    transition: 1.5s;
+}
+.input{
+    width: 50%;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    font-size: 25px;
+}
+.hide{
+    display: none;
+}
+.go2{
+    position: relative;
+    bottom: 50px;
+    width:50%;
+    height: 100vh;
+    background-color:#80BCBD;
+}
+#goo{
+    margin:7px;
+    font-size: 30px;
+    color: black;
+}
+#goo:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 1.5s;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+.menu12 .menu13 .menu14{
+    margin: 18px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin: 20px;
+}
+#tab:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 1.5s;
+}
+#tab{
+    padding: 14px;
+    margin:30px 10px;
+}
+#photo3{
+    width: 600px;
+    height: 350px;
+    background-size: cover;
+}
+.carousel{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+.offer{
+    width: 100%;
+    height: 190px;
+    background-image: url(photo/13.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#hr{
+    border: 9px solid black;
+}
+.explore{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+#explore{
+    font-size: 25px;
+    color: aliceblue;
+    margin-left: 230px;
+    margin-top: 9px;
+}
+
+.pro{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 4px;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+}
+#http{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+}
+#tripel{
+    color: white;
+    font-size: 22px;
+}
+@media screen and (max-width: 600px){
+    .go2{
+        position: relative;
+        bottom: 50px;
+        width:80%;
+        height: 100vh;
+        background-color:#80BCBD;
+    }
+    #goo{
+        margin:8px;
+        font-size: 25px;
+    }
+    #tab:hover{
+        background-color: black;
+        color: aliceblue;
+        transition: 1.5s;
+    }
+    .pro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        max-width: 100%;
+    }
+    #explore{
+        font-size: 25px;
+        color: aliceblue;
+        margin-left: 6px;
+    }
+    #tripel{
+        color: white;
+        font-size: 16px;   
+    }
+    #op{
+        margin: 9px 10px;
+    }
+}

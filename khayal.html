@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/79edaac2d2.js" crossorigin="anonymous"></script>
+    <meta name="keywords" content="افضل اسعار للمنتجات,ارخص منتجات فى العالم  , شراء لابتوب او تليفون او تابلت او اجهزه كهربائيه  , افضل منتج واطول فترة سداد">
+    <meta name="author" content="Ibrahim Khayyal">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="افضل موقع تسويق للمنتجات فى الشرق الاوسط">
+    <link rel="icon" href="icon/online-shop.png">
+    <link rel="stylesheet" href="khayal.css">
+    <title>EL Khayyal</title>
+</head>
+<body dir="ltr">
+    <!-- الجزء الخاص بالاسم واللوجو و الايقون navbar -->
+    <header>    
+        <div class="navigation">
+            <div class="logo">
+                <a href="#"><i class="fa-solid fa-horse-head"></i></a>
+                <a href="#">EL KHAYYAL</a>
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" class="open" onclick="add();" ><i class="fa-solid fa-magnifying-glass" id="cart"></i></a>
+                <a href="#" class="start" onclick="go();"><i class="fa-solid fa-list"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- البحث عن المنتجات  search -->
+    <div class="hide" id="ita">
+        <form>
+            <input type="text" class="input" placeholder="Enter Your Product">
+            <button id="button">Submit</button>
+            <a href="#" id="exit" onclick="remove2();"><i class="fa-solid fa-x"></i></a>
+        </form>
+    </div>
+        
+    <!-- الجزء الخاص  بالراوبط sidebar --> 
+    <div class="go2 hide">
+        <div class="up">
+            <a href="#" id="goo" class="menu1" onclick=" men();">Menu</a>
+            <a href="#" id="goo" class="account1" onclick="meu();">Account</a>
+            <a href="#" id="goo" class="setting1" onclick="meo();">Settings</a>
+            <a href="#" id="goo" class="end22" onclick="end();"><i class="fa-solid fa-x"></i></a>
+            <hr>
+        </div>
+        <div class="menu12">
+            <ul>
+                <li><a href="#" id="tab">Phones</a></li>
+                <li><a href="#" id="tab">Tablets</a></li>
+                <li><a href="#" id="tab">Ipad</a></li>
+                <li><a href="#" id="tab">Electronics</a></li>
+                <li><a href="#" id="tab">HeadPhones</a></li>
+                <li><a href="#" id="tab">Tv</a></li>
+                <li><a href="#" id="tab">Games</a></li>
+            </ul>
+        </div>
+        <div class="menu13 hide">
+            <ul>
+                <li><a href="#" id="tab">My Account</a></li>
+                <li><a href="#" id="tab">My Orders</a></li>
+                <li><a href="#" id="tab">Payment</a></li>
+                <br>
+                <br>
+                <hr>
+                <li><a href="#" id="tab">Sign Up</a></li>
+                <li><a href="#" id="tab">Log In</a></li>
+            </ul>
+        </div>
+        <div class="menu14 hide">
+            <ul>
+                <li><a href="#" id="tab">English</a></li>
+                <li><a href="#" id="tab">Arabic</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- الجزء الخاص بالصور Carousel  -->
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+    
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="photo/1.jpg" id="photo3" alt="Los Angeles" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="photo/6.jpg" id="photo3" alt="Chicago" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="photo/3.jpg" id="photo3" alt="New York" class="d-block w-100">
+        </div>
+        </div>
+    
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <hr id="hr">
+    <hr id="hr">
+    <div class="offer">
+    </div>
+    <hr id="hr">
+    <hr id="hr">
+    <div class="explore">
+        <p id="explore">The best-selling products in the world</p>
+    </div>
+    <hr id="hr">
+    <!-- الجزء الخاص بعرض المنتجات  -->
+    <div class="pro">
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="photo/19.png" alt="phone">
+            <div class="card-body">
+              <h4 class="card-title">Iphone 16 pro max</h4>
+              <p class="card-text">One of the greatest phones in the current era,
+                very fast and highly efficient</p>
+              <p class="card-text">62000EG</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="photo/91.jpg" alt="phone">
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy S24 Ultra</h4>
+              <p class="card-text">Rendering of the Samsung
+                bokeh shots was fairly natural and pleasant,
+                with subjects well isolated from the background</p>
+              <p class="card-text">54000EG</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="photo/44.jpg" alt="Smartwatch">
+            <div class="card-body">
+              <h4 class="card-title">Huawei Watch GT4 Sport (46mm) - Black</h4>
+              <p class="card-text">30 minutes of Bluetooth calling per week, 30 minutes of audio playback per week,</p>
+              <p class="card-text">10000EG</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="photo/h8.jpg" alt="phone">
+            <div class="card-body">
+              <h4 class="card-title">Lenovo 2XV007BED-LOQ 15IRH8</h4>
+              <p class="card-text">Intel® Core™ i7-13620H, 16GB RAM, 512GB SSD,
+                NVIDIA® GeForce RTX™ 4050 Graphics, 15.6" FHD Display, Grey</p>
+              <p class="card-text">53000EG</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="photo/w.jpg" alt="phone">
+            <div class="card-body">
+              <h4 class="card-title">Apple MacBook Pro 16.2-inch</h4>
+              <p class="card-text"> M2 16GB RAM, 512GB, Space Gray - MNW83B/A</p>
+              <p class="card-text">165000EG</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="photo/er1.jpg" alt="phone">
+            <div class="card-body">
+              <h4 class="card-title">PlayStation 5 + Spider-Man 2 Limited Edition</h4>
+              <p class="card-text">Brand: Sony
+                Graphics Card Type: AMD Radeon RDNA 2 Graphics Engine
+                HDMI: Supports
+                HDMI Ports: 1
+                CPU: x86-64-AMD Ryzen “Zen 2”</p>
+              <p class="card-text">52000EG</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="photo/we.jpg" alt="phone">
+            <div class="card-body">
+              <h4 class="card-title">Xiaomi Home Smart 2K C300 Security Camera - White</h4>
+              <p class="card-text">Lens angle: F1.4 large aperture ,
+                Resolution: 2304 x 1296,
+                Connectivity: Wi-Fi IEEE 802.11b/g/n 2.4GHz,
+                Storage: Micro SD Card (Support up to 256GB)
+              </p>
+              <p class="card-text">92000EG</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="photo/es.jpg" alt="phone">
+            <div class="card-body">
+              <h4 class="card-title">DeLonghi Oil Heater, 9 Fins, 2000 Watt, White - TRRS0920</h4>
+              <p class="card-text">Brand:   DeLonghi  
+                Model:  TRRS0920  
+                Type:   Oil Heater  
+                Power: 2000W  
+                Power Source:  Electricity 
+                Number of power settings (n°): 3
+                For rooms up to (m³): 60
+                Fins: 9
+                Color: White  
+                Warranty:  2 years
+              </p>
+              <p class="card-text">9500EG</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<!-- الجزء الخاص بالقائمه فى اخر الصفحة -->
+    <footer>
+        <ul id="http">
+            <li id="op"><a href="#" id="tripel"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
+            <li id="op"><a href="#" id="tripel"><i class="fa-solid fa-heart"></i><p>Favourite</p></a></li>
+            <li id="op"><a href="#" id="tripel"><i class="fa-solid fa-list"></i><p>List</p></a></li>
+            <li id="op"><a href="#" id="tripel"><i class="fa-solid fa-user"></i><p>My Account</p></a></li>
+            <li id="op"><a href="#" id="tripel"><i class="fa-solid fa-cart-shopping"></i><p>Cart</p></a></li>
+        </ul>
+    </footer>
+    
+
+    <script src="khayal.js"></script>
+
+    
+</body>
+</html>
